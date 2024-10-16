@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Siswa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Dashboard Siswa</h2>
+            <ul>
+                <li><a href="#profile">Profil</a></li>
+                <li><a href="#courses">Kursus</a></li>
+                <li><a href="#tasks">Tugas</a></li>
+                <li><a href="#grades">Nilai</a></li>
+                <li><a href="#schedule">Jadwal</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <nav class="navbar">
+                <button class="menu-toggle">☰</button>
+                <div class="navbar-brand">Rakamin</div>
+                <div class="navbar-search">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="navbar-icons">
+                    <i class="fas fa-bell"></i>
+                    <img src="./img/user.png" alt="Profil" class="profile-pic">
+                </div>
+            </nav>
+            <div class="content">
+                <section id="profile" class="dashboard-section">
+                    <h2>Profil Siswa</h2>
+                    <table class="profile-table">
+                        <tr>
+                            <th>Nama</th>
+                            <td>Muhammad Rizky Ardian</td>
+                        </tr>
+                        <tr>
+                            <th>NIM</th>
+                            <td>2144390003</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>rizkyardian3103@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Angkatan</th>
+                            <td>2021</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>Aktif</td>
+                        </tr>
+                        <tr>
+                            <th>Program</th>
+                            <td>Studi Independen Batch 7</td>
+                        </tr>
+                        <tr>
+                            <th>Kursus</th>
+                            <td>IT FULL STACK WEB DEVELOPMENT</td>
+                        </tr>
+                    </table>
+                </section>
+                
+                <section id="courses" class="dashboard-section">
+                    <h2>IT FULL STACK WEB DEVELOPMENT</h2>
+                    <ul class="course-list">
+                        <li>
+                            Product Management Fundamentals
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            UI/UX
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            User Research 101 & Competitive Research
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            HTML & CSS
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            Layouting UI & UI Responsive
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 10%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            Introduction to Software Engineering
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 5%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            Back End Development - PHP Fundamentals
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section id="tasks" class="dashboard-section">
+                    <h2>Assignment History</h2>
+                    <table class="task-table">
+                        <thead>
+                            <tr>
+                                <th>Session Name</th>
+                                <th>Submission date</th>
+                                <th>Due date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Homework - Product Management Fundamentals</td>
+                                <td>20 September 2024</td>
+                                <td>22 September 2024</td>
+                                <td><span class="task-status status-completed">Selesai</span></td>
+                            </tr>
+                            <tr>
+                                <td>Exam - UI/UX Design</td>
+                                <td>4 Oktober 2024</td>
+                                <td>6 Oktober 2024</td>
+                                <td><span class="task-status status-in-progress">Sedang Dinilai</span></td>
+                            </tr>
+                            <tr>
+                                <td>Exam - Layouting UI</td>
+                                <td>-</td>
+                                <td>29 September 2024</td>
+                                <td><span class=" task-status status-pending">Belum Dikerjakan</span></td>
+                            </tr>
+                            <tr>
+                                <td>Homework - HTML & CSS</td>
+                                <td>14 Oktober 2024</td>
+                                <td>13 Oktober 2024</td>
+                                <td><span class=" task-status status-late">Late</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
