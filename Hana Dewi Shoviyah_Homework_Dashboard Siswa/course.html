@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enrolled Courses - Learning Together</title>
+    <link rel="stylesheet" href="course.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- navigation start -->
+<nav>
+  <div class="nav-container">
+    <div class="logo-menu">
+      <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="logo">
+        <h3>Learning Together</h3>
+      </div>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="course.html" class="active">Courses</a></li>
+        <li><a href="assignment.html">Assignments</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </div>
+    <div class="profile">
+      <img src="author.jpg" alt="Profile" class="profile-pic" />
+      <a href="profile.html"><span>Erine</span></a>
+    </div>
+  </div>
+</nav>
+<!-- navigation end  -->
+    <div class="main-content">
+      <h1>Enrolled Courses</h1>
+      <div class="course-filters">
+        <button class="active">All Courses</button>
+        <button>Active Courses</button>
+        <button>Completed Courses</button>
+      </div>
+      <div class="course-list">
+        <div class="course-card">
+          <img src="python.jpg" alt="Introduction to Python" class="course-image" />
+          <div class="course-info">
+            <h2>
+              <a href="material.html" style="text-decoration: none; color: inherit"> Introduction to Python </a>
+            </h2>
+            <p>Total Lessons: 48 | Completed Lessons: 36/48</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+            <p class="completion">75% Complete</p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="web.jpg" alt="Web Development Fundamentals" class="course-image" />
+          <div class="course-info">
+            <h2>Web Development Fundamentals</h2>
+            <p>Total Lessons: 135 | Completed Lessons: 135/135</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%"></div>
+            </div>
+            <p class="completion">100% Complete</p>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="data.jpg" alt="Data Science Basics" class="course-image" />
+          <div class="course-info">
+            <h2>Data Science Basics</h2>
+            <p>Total Lessons: 95 | Completed Lessons: 28/95</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 30%"></div>
+            </div>
+            <p class="completion">30% Complete</p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="ML.jpg" alt="Machine Learning" class="course-image" />
+          <div class="course-info">
+            <h2>Machine Learning</h2>
+            <p>Total Lessons: 64 | Completed Lessons: 0/64</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 0%"></div>
+            </div>
+            <p class="completion">0% Complete</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Add this script for the burger menu
+      document.querySelector(".burger-menu").addEventListener("click", function () {
+        document.querySelector(".menu").classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

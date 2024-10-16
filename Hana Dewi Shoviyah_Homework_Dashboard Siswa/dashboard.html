@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Together Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- navigation start -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo-menu">
+          <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="logo">
+            <h3>Learning Together</h3>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="assignment.html">Assignments</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </div>
+        <div class="profile">
+          <img src="author.jpg" alt="Profile" class="profile-pic" />
+          <a href="profile.html"><span>Erine</span></a>
+        </div>
+      </div>
+    </nav>
+    <!-- navigation end  -->
+
+    <!-- assignment start -->
+    <div class="dashboard">
+      <div class="welcome-section">
+        <h1>Welcome, Erine!</h1>
+        <p>Here's an overview of your learning progress and upcoming tasks</p>
+      </div>
+      <h2 class="section-title">Assignments</h2>
+      <div class="stats">
+        <div class="stat-card">
+          <i class="fas fa-calendar-alt"></i>
+          <div class="stat-info">
+            <a href="submit_assign.html" style="text-decoration: none; color: inherit">
+              <h2>Python Project</h2>
+            </a>
+            <p>Due in 3 days</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-book"></i>
+          <div class="stat-info">
+            <h2>Web Dev Quiz</h2>
+            <p>Tomorrow</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-file-alt"></i>
+          <div class="stat-info">
+            <h2>Data Science Reading</h2>
+            <p>Due in 5 days</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-users"></i>
+          <div class="stat-info">
+            <h2>Group Discussion</h2>
+            <p>Next Week</p>
+          </div>
+        </div>
+      </div>
+      <!-- assignments end  -->
+
+      <!-- course start  -->
+      <div class="dashboard-content">
+        <div class="courses">
+          <h2>Your Courses</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Course Name</th>
+                <th>Progress</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="material.html" style="text-decoration: none; color: inherit"> Introduction to Python </a>
+                </td>
+                <td>75%</td>
+                <td><span class="status process">In Progress</span></td>
+              </tr>
+              <tr>
+                <td>Web Development Fundamentals</td>
+                <td>100%</td>
+                <td><span class="status completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>Data Science Basics</td>
+                <td>30%</td>
+                <td><span class="status process">In Progress</span></td>
+              </tr>
+              <tr>
+                <td>Machine Learning</td>
+                <td>0%</td>
+                <td><span class="status pending">Not Started</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- course end  -->
+
+        <!-- todolist start  -->
+        <div class="todo-list">
+          <h2>To-Do List</h2>
+          <ul id="todoItems">
+            <li>Review Python basics</li>
+            <li>Complete JavaScript tutorial</li>
+            <li>Prepare for Data Science quiz</li>
+          </ul>
+          <button id="addTodo" class="add-todo-btn"><i class="fas fa-plus"></i> Add Task</button>
+        </div>
+        <!-- todolist end  -->
+      </div>
+    </div>
+
+    <!-- footer start -->
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <div class="about-lt">
+            <h3>Learning Together</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere in, non praesentium soluta quis enim aperiam aliquam, rem totam porro, vel obcaecati modi architecto error maiores iusto quaerat aut eum.</p>
+          </div>
+          <div class="contact">
+            <h4>Contact</h4>
+            <div class="email-container">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:learning.together@mail.com">learning.together@mail.com</a>
+            </div>
+          </div>
+
+          <div class="help">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Panduan</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <h4>Social Media</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon">
+                <i class="fab fa-youtube"></i>
+                <span>@learningtogether</span>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+                <span>@learningtogether</span>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+                <span>@learningtogether</span>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+                <span>@learningtogether</span>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+                <span>@learningtogether</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div>&copy;2024 - Learning Together</div>
+        </div>
+      </section>
+    </footer>
+    <!-- footer end -->
+
+    <script>
+      // Add this script for the burger menu
+      document.querySelector(".burger-menu").addEventListener("click", function () {
+        document.querySelector(".menu").classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
