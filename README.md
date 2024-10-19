@@ -2,7 +2,6 @@
 
 by Ikan Three
 
-Hana Dewi Shoviyah
-Hana
-Teknik Informatika, FMIPA, Universitas Negeri Semarang, 2021
-Fullstack Developer
+Nahla Putri Gunawan, Nala, Sistem Informasi, Sekolah Tinggi Teknologi Terpadu Nurul Fikri angkatan 2022, UI/UX Designer
+
+Hana Dewi Shoviyah, Hana, Teknik Informatika, FMIPA, Universitas Negeri Semarang, 2021, Fullstack Developer
