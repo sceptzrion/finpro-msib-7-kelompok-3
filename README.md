@@ -9,3 +9,5 @@ Hana Dewi Shoviyah, Hana, Teknik Informatika, FMIPA, Universitas Negeri Semarang
 Muhammad Rizky Ardian, Ekky , Fakultas Teknik, Prodi Sistem Informasi, Universitas Persada Indonesia YAI, 2021, Fullstack Developer
 
 Ela Fatmawati, Ela, Teknik Informatika, Fakultas Sains dan Teknologi, Universitas Nahdlatul Ulama Sunan Giri Angkatan 2022, Web Developer
+
+Pradipta Swardhana Permadi, Dipta, Institut Bisnis Muhammadiyah Bekasi, Fakultas Teknik dan Komunikasi, Teknik Informatika, Angkatan 2022, Front-end Web Developer
