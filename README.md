@@ -11,3 +11,5 @@ Muhammad Rizky Ardian, Ekky , Fakultas Teknik, Prodi Sistem Informasi, Universit
 Ela Fatmawati, Ela, Teknik Informatika, Fakultas Sains dan Teknologi, Universitas Nahdlatul Ulama Sunan Giri Angkatan 2022, Web Developer
 
 Pradipta Swardhana Permadi, Dipta, Institut Bisnis Muhammadiyah Bekasi, Fakultas Teknik dan Komunikasi, Teknik Informatika, Angkatan 2022, Front-end Web Developer
+
+Nur Asysyifa Febriyanti, Syifa, Universitas Amikom Purwokerto, Fakultas Ilmu Komputer, Informatika, Angkatan 2021, Data Science
