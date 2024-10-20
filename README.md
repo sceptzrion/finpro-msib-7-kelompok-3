@@ -11,3 +11,5 @@ Muhammad Rizky Ardian, Ekky , Fakultas Teknik, Prodi Sistem Informasi, Universit
 Ela Fatmawati, Ela, Teknik Informatika, Fakultas Sains dan Teknologi, Universitas Nahdlatul Ulama Sunan Giri Angkatan 2022, Web Developer
 
 Pradipta Swardhana Permadi, Dipta, Institut Bisnis Muhammadiyah Bekasi, Fakultas Teknik dan Komunikasi, Teknik Informatika, Angkatan 2022, Front-end Web Developer
+
+Muhamad Ikhsan Rizqi Yanuar, Ikhsan, Informatika, Fakultas Ilmu Komputer, Universitas Singaperbangsa Karawang, 2022, Fullstack Developer
