@@ -1,0 +1,268 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #556cd6;
+    padding: 15px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #465bb1;
+}
+
+.icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2a3c69;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.courses-section, .tasks-section, .notifications-section, .upcoming-events-section, .recent-activity-section {
+    margin-bottom: 50px;
+}
+
+.courses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #2a3c69;
+}
+
+.progress-bar {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 12px;
+    margin-top: 15px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #556cd6;
+    transition: width 0.5s ease;
+}
+
+.tasks-list, .notifications-list, .events-list, .activity-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tasks-list li,
+.notifications-list li,
+.events-list li,
+.activity-list li {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.tasks-list li:hover,
+.notifications-list li:hover,
+.events-list li:hover,
+.activity-list li:hover {
+    transform: translateY(-5px);
+}
+
+/* Profile Section */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align profile info to the left */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure full width for proper alignment */
+}
+
+.profile-info p {
+    margin-bottom: 10px; /* Space between items */
+    font-size: 1.1rem; /* Adjust font size */
+    color: #333;
+}
+
+.profile-section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.profile-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto; /* Center the profile card */
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.edit-button {
+    align-self: center; /* Center the button */
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #556cd6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #465bb1;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    background-color: #eff0f1;
+    color: rgb(6, 5, 5);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #a4b6fa;
+}
+
+/* Footer */
+footer {
+    background-color: #556cd6;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #556cd6;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.show {
+        display: flex; /* Shows the nav when .show is toggled */
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .icon {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .courses-list {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card h3 {
+        font-size: 1.2rem;
+    }
+}
