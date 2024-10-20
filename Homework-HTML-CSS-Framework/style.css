@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c341f; /* Hijau tua seperti daun untuk desktop */
+    transition: background-color 0.3s ease;
+}
+
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #32CD32; /* Hijau cerah */
+    transform: scale(1.05);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparansi 0.7 di desktop */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler {
+    border-color: white; 
+}
+
+.navbar-toggler-icon {
+    background-color: white; 
+}
+
+.navbar-nav {
+    text-align: center; 
+}
+
+.navbar.scrolled {
+    background-color: rgba(50, 205, 50, 1); 
+}
+
+.nav-link {
+    color: white !important;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(50, 205, 50, 0.5); /* Hijau muda transparan saat hover */
+    color: #ffdd57; /* Warna teks kuning keemasan */
+    border-radius: 5px; /* Membuat sudut tombol lebih halus */
+}
+
+/* Hero Section Styles */
+#home {
+    padding: 150px 20px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+#home h1 {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Animasi fade in */
+    font-size: 2.5rem; 
+}
+
+#home p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Section Styles */
+#destinations, #gallery, #about {
+    background-color: #1c341f; /* Hijau tua untuk desktop */
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* Fade effect for Destinations Section */
+#destinations {
+    margin-bottom: 50px; /* Memberi ruang lebih di bawah destinasi */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInDestinations 1s forwards; /* Animasi fade saat membuka section */
+}
+
+@keyframes fadeInDestinations {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Flip card container */
+.flip-card {
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #fff;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #f8f9fa; /* Adjust color for back */
+    transform: rotateY(180deg);
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card:hover {
+    transform: translateY(-10px); /* Lift the card by 10px when hovered */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.card-footer {
+    padding: 10px;
+    background-color: #000; /* Footer color black */
+    color: white;
+}
+
+/* Ensure consistent card sizes */
+.card {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Custom background for card title */
+.bg-green-transparent {
+    background-color: rgba(50, 205, 50, 0.7); /* Hijau transparan */
+    padding: 5px;
+    border-radius: 5px;
+    color: white; /* Teks putih agar lebih terlihat */
+    text-align: center;
+}
+
+/* Gallery Styles */
+#gallery {
+    background-color: #1c341f; /* Hijau tua untuk desktop */
+    color: white;
+    margin-bottom: 50px; /* Memberi jarak dengan section about */
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+#gallery .position-relative {
+    overflow: hidden;
+    border-radius: 10px;
+    height: 150px;
+}
+
+#gallery .position-relative .text-white {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* About Me Section Styles */
+#about img {
+    width: 100%;
+    max-width: 300px; /* Batasi ukuran gambar di mobile */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Radius untuk sudut lembut */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000; /* Hitam pekat */
+    color: white;
+}
+
+/* Responsiveness */
+/* Styles for Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Body background for mobile */
+    body {
+        background-color: #0e1d12; /* Lebih gelap di mobile */
+    }
+
+    /* Navbar background for mobile */
+    .navbar {
+        background-color: rgb(0, 0, 0); /* Warna hitam pekat di mobile */
+    }
+
+    #home {
+        padding: 40px 20px; /* Kurangi padding di layar kecil */
+        height: auto; /* Mengatur tinggi otomatis */
+        background-size: cover;
+    }
+
+    #home h1 {
+        font-size: 1rem; /* Ukuran teks yang lebih kecil untuk mobile */
+        margin-bottom: 10px;
+    }
+
+    #home p {
+        font-size: 0.5rem; /* Ukuran teks yang lebih kecil untuk mobile */
+    }
+
+    /* Different section background colors for mobile */
+    #destinations, #gallery, #about {
+        background-color: #0c1a11; /* Warna hijau lebih gelap di mobile */
+    }
+
+    footer {
+        background-color: rgb(0, 0, 0); /* Warna hitam pekat di mobile */
+    }
+
+    .hover-card {
+        margin-bottom: 20px;
+    }
+
+    /* Adjust card height for mobile */
+    .card {
+        min-height: 400px;
+    }
+
+    /* Responsive padding for sections */
+    #destinations, #gallery, #about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* Gallery images on mobile */
+    #gallery .position-relative {
+        height: 100px; /* Lebih kecil di mobile */
+    }
+
+    /* Make sure images and content are properly scaled for mobile */
+    .flip-card-front img, .flip-card-back img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    /* Adjust grid layout for mobile */
+    .row-cols-md-3 {
+        display: grid;
+        grid-template-columns: 1fr; /* Full width grid on mobile */
+        gap: 10px;
+    }
+
+    /* Reduce font sizes for mobile */
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
