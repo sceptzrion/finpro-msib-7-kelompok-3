@@ -13,3 +13,6 @@ Ela Fatmawati, Ela, Teknik Informatika, Fakultas Sains dan Teknologi, Universita
 Pradipta Swardhana Permadi, Dipta, Institut Bisnis Muhammadiyah Bekasi, Fakultas Teknik dan Komunikasi, Teknik Informatika, Angkatan 2022, Front-end Web Developer
 
 Muhamad Ikhsan Rizqi Yanuar, Ikhsan, Informatika, Fakultas Ilmu Komputer, Universitas Singaperbangsa Karawang, 2022, Fullstack Developer
+
+Nur Asysyifa Febriyanti, Syifa, Universitas Amikom Purwokerto, Fakultas Ilmu Komputer, Informatika, Angkatan 2021, Data Science
+
