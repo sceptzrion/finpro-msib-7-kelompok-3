@@ -17,3 +17,5 @@ Muhamad Ikhsan Rizqi Yanuar, Ikhsan, Informatika, Fakultas Ilmu Komputer, Univer
 Nur Asysyifa Febriyanti, Syifa, Universitas Amikom Purwokerto, Fakultas Ilmu Komputer, Informatika, Angkatan 2021, Data Science
 
 Sifaul Hikmah, Sifaul, Teknik Informatika, fakultas Teknik dan Ilmu Komputer, universitas Sains Al-Qur'an
+
+Riri Komala Sari, Teknik INformatika, Fakultas Teknologi Informasi dan Komunikasi, Institut Teknologi dan Bisnis Bina Sarana Global, Angkatan 2022, Fullstack Developer
