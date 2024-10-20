@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Kalimantan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Explore Kalimantan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Single Image -->
+    <div id="home" class="text-center py-5" style="background-image: url('https://images.unsplash.com/photo-1719546744531-f004a0b5fe3a?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); padding: 300px; background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white fade-in">Discover the Wild Beauty of Kalimantan</h1>
+            <p class="lead text-white">Explore exotic landscapes, rich culture, and unique wildlife.</p>
+        </div>
+    </div>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations-section py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Top Destinations in Kalimantan</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Tanjung Puting -->
+                <div class="col">
+                    <div class="card flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                                <img src="https://images.unsplash.com/photo-1549793786-6c0ad4e98a50" class="card-img-top" alt="Tanjung Puting">
+                                <div class="card-body">
+                                    <h5 class="card-title bg-green-transparent">Tanjung Puting</h5>
+                                    <p class="text-black">a renowned conservation area located in...</p>
+                                    <button class="btn btn-outline-success" onclick="flipCard(this)">Read More</button>
+                                </div>
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tanjung Puting</h5>
+                                    <p class="card-description text-black">Taman Nasional Tanjung Puting is located in Central Kalimantan, Indonesia, is a renowned ecotourism destination famous for orangutan conservation. Visitors can explore its vast rainforests, home to diverse wildlife like proboscis monkeys, gibbons, clouded leopards, and over 200 bird species.</p>
+                                    <button class="btn btn-outline-danger" onclick="closeFlip(this)">X</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pasar Terapung -->
+                <div class="col">
+                    <div class="card flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Floating_Market_Lok_Baintan%2C_Lok_Baintan_Port.JPG" class="card-img-top" alt="Pasar Terapung">
+                                <div class="card-body">
+                                    <h5 class="card-title bg-green-transparent">Pasar Terapung</h5>
+                                    <p class="text-black">A unique shopping experience on traditional boats along the river, visitors can explore local..</p>
+                                    <button class="btn btn-outline-success" onclick="flipCard(this)">Read More</button>
+                                </div>
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <div class="card-body">jm
+                                    <h5 class="card-title">Pasar Terapung</h5>
+                                    <p class="card-description text-black">Pasar Terapung in South Kalimantan offers a unique shopping experience on traditional boats along the river. Visitors can explore local goods, fresh produce, and witness the vibrant, bustling market culture directly on the water.</p>
+                                    <button class="btn btn-outline-danger" onclick="closeFlip(this)">X</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Surung Danum -->
+                <div class="col">
+                    <div class="card flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                                <img src="https://www.djkn.kemenkeu.go.id/files/images/2023/05/61.jpeg" class="card-img-top" alt="Surung Danum">
+                                <div class="card-body">
+                                    <h5 class="card-title bg-green-transparent">Surung Danum</h5>
+                                    <p class="text-black">a serene natural water source in Central Kalimantan, surrounded by lush greenery. It's a popular destination for...</p>
+                                    <button class="btn btn-outline-success" onclick="flipCard(this)">Read More</button>
+                                </div>
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <div class="card-body">
+                                    <h5 class="card-title">Surung Danum</h5>
+                                    <p class="card-description text-black">Surung Danum is a serene natural water source in Central Kalimantan, surrounded by lush greenery. It's a popular destination for those seeking tranquility, offering refreshing clear waters perfect for relaxation and connecting with nature.</p>
+                                    <button class="btn btn-outline-danger" onclick="closeFlip(this)">X</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Derawan Islands -->
+                <div class="col">
+                    <div class="card flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                                <img src="https://cdn.idntimes.com/content-images/community/2020/10/pulau-derawan-635c9cd506926000f0bd0e31cd1fb3fb.jpg" class="card-img-top" alt="Derawan Islands">
+                                <div class="card-body">
+                                    <h5 class="card-title bg-green-transparent">Pulau Derawan</h5>
+                                    <p class="text-black">A tropical paradise for divers and snorkelers in East Kalimantan, known for...</p>
+                                    <button class="btn btn-outline-success" onclick="flipCard(this)">Read More</button>
+                                </div>
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pulau Derawan</h5>
+                                    <p class="card-description text-black">Pulau Derawan is a tropical paradise for divers and snorkelers in East Kalimantan, known for its crystal-clear waters and vibrant coral reefs. It’s home to rich marine life, including manta rays, sea turtles, and various fish species.</p>
+                                    <button class="btn btn-outline-danger" onclick="closeFlip(this)">X</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bukit Raya -->
+                <div class="col">
+                    <div class="card flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                                <img src="https://www.the7summitsindonesia.com/wp-content/uploads/2021/02/bukitrayaheader2.jpg" class="card-img-top" alt="Bukit Raya">
+                                <div class="card-body">
+                                    <h5 class="card-title bg-green-transparent">Bukit Raya</h5>
+                                    <p class="text-black">The highest mountain in Kalimantan located in the heart of Borneo... </p>
+                                    <button class="btn btn-outline-success" onclick="flipCard(this)">Read More</button>
+                                </div>
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bukit Raya</h5>
+                                    <p class="card-description text-black">Bukit Raya is Kalimantan's highest peak, located in the heart of Borneo. It's a challenging hiking destination, offering breathtaking views of dense forests and diverse wildlife, attracting adventurers and nature enthusiasts seeking an unforgettable journey.</p>
+                                    <button class="btn btn-outline-danger" onclick="closeFlip(this)">X</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dayak Village -->
+                <div class="col">
+                    <div class="card flip-card">
+                        <div class="flip-card-inner">
+                            <!-- Front Side -->
+                            <div class="flip-card-front">
+                                <img src="https://indonesia.go.id/resources/album/keragaman-indonesia/1549712464_Menjelajah_Kampung_Dayak.jpg" class="card-img-top" alt="Dayak Village">
+                                <div class="card-body">
+                                    <h5 class="card-title bg-green-transparent">Desa Dayak</h5>
+                                    <p class="text-black">An authentic experience of Kalimantan’s indigenous Dayak culture, visitors can...</p>
+                                    <button class="btn btn-outline-success" onclick="flipCard(this)">Read More</button>
+                                </div>
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flip-card-back">
+                                <div class="card-body">
+                                    <h5 class="card-title">Desa Dayak</h5>
+                                    <p class="card-description text-black">Desa Dayak offers an authentic experience of Kalimantan’s indigenous Dayak culture. Visitors can witness traditional customs, crafts, dances, and architecture while gaining insight into the unique way of life of the Dayak people in Borneo.</p>
+                                    <button class="btn btn-outline-danger" onclick="closeFlip(this)">X</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Photo Gallery</h2>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1549793786-6c0ad4e98a50" class="img-fluid rounded hover-scale" alt="Gallery Image 1">
+                        <div class="position-absolute top-0 start-0 text-white p-2">Tanjung Puting</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="https://syamsudinnoor-airport.co.id/frontend/uploads/defaults/WssMQ520170309111756.jpg" class="img-fluid rounded hover-scale" alt="Gallery Image 2">
+                        <div class="position-absolute top-0 start-0 text-white p-2">Pasar Terapung</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="https://cdn.antarafoto.com/cache/1200x799/2024/01/01/liburan-tahun-baru-di-wisata-alam-air-surung-danum-19n1x-dom.jpg" class="img-fluid rounded hover-scale" alt="Gallery Image 3">
+                        <div class="position-absolute top-0 start-0 text-white p-2">Surung Danum</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="https://dispar.kaltimprov.go.id/wp-content/uploads/2019/09/labuancermin.jpg" class="img-fluid rounded hover-scale" alt="Gallery Image 4">
+                        <div class="position-absolute top-0 start-0 text-white p-2">Pulau Derawan</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO8gLx65o9WwlX7cCeu1SbVUIXHvIBdBFsv3PZnX1IFlWdI1BLgl4LkEH6pYxtwFVZdL0FwOxjBcwraTQMtjTN1Ya0c2Bb2Mo0HcPITJ9rCPS34U8F_LKzbfySyIGfUZndLYm-glUC_KY/s1600/IMG_4263.JPG" class="img-fluid rounded hover-scale" alt="Gallery Image 5">
+                        <div class="position-absolute top-0 start-0 text-white p-2">Bukit Raya</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="https://4.bp.blogspot.com/-NHvFLBGU-SE/V-J0fYHkEtI/AAAAAAAAPPY/OWVz9ruuzz0NjowjDVqzRoACh3ZrOPf7gCLcB/s1600/14280544_1611765839123690_746924743_n.jpg" class="img-fluid rounded hover-scale" alt="Gallery Image 6">
+                        <div class="position-absolute top-0 start-0 text-white p-2">Kampung Dayak</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="https://infokaltim.id/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-13-at-23.03.10.jpeg" class="img-fluid rounded hover-scale" alt="Gallery Image 7">
+                        <div class="position-absolute top-0 start-0 text-white p-2">Sungai Mahakam</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Lahan_basah_Taman_Nasional_Danau_Sentarum%2C_Kalimantan_Barat.jpg" class="img-fluid rounded hover-scale" alt="Gallery Image 8">
+                        <div class="position-absolute top-0 start-0 text-white p-2">Danau Sentarum</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="aboutme-section py-5 text-white">
+        <div class="container d-flex align-items-center">
+            <div class="col-md-4">
+                <img src="https://asset.kompas.com/crops/ZiiWLoABEQuFVToWwGdRZ3xdjNc=/0x0:0x0/750x500/data/photo/buku/64a3efa847dc8.jpg" class="rounded img-fluid mb-4 d-none d-md-block" alt="Profile Picture">
+            </div>
+            <div class="col-md-8">
+                <h2 class="fw-bold mb-4">About Me</h2>
+                <p>Halo, my name is Adinda Cahya Kamilla. As the designer of this Kalimantan tourism landing page, my goal is to showcase the region’s natural beauty and rich culture. I’ve highlighted top destinations to inviting you to explore Kalimantan's wonders.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Explore Kalimantan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        function flipCard(button) {
+            const cardDescription = button.nextElementSibling;
+            cardDescription.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
